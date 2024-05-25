@@ -23,4 +23,12 @@ perfect square root, if it exists, is at or before this midpoint, so we move the
 midpoint. Otherwise, we move *left* up to *mid + 1*. The moment *left* and *right* converge, we
 check if the square of *left* is equal to *num* to conclude whether *num* is a perfect square.
 
+### Method 2: Math Trick
+
+This method uses the observation that every perfect square is the sum of a sequence of odd
+numbers starting from 1. We keep adding sequentially larger odd numbers to a sum. This sum
+starts at 0, and we increase the odd number to add by 2 each time. Whenever the sum equals
+the number *num*, we confirm that *num* is a perfect sqaure. The underlying math of this trick is that
+the sum of the first n odd numbers is *n^2*, which is exactly the definition of a perfect square.
+
 
